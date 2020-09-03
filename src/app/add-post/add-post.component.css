@@ -1,0 +1,26 @@
+.background{
+    width: 100%;
+    height: calc(100vh - 125px);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 4px #888888;
+}
+
+form > input {
+    width: 90%;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 15px;
+}

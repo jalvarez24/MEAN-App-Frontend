@@ -1,0 +1,64 @@
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 4px #888888;
+    position: relative;
+}
+
+.closer{
+    position: absolute;
+    right: 7px;
+    top: 2px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.closer:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.title-container, .desc-container, .likes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-container{
+    justify-content: flex-start;
+    background-color: rgb(48, 168, 208);
+    width: 100%;
+    flex: .35;
+}
+
+.title{
+    font-size: 32px;
+    padding: 20px;
+}
+
+.desc-container{
+    background-color: lightgray;
+    width: 100%;
+    flex: .4;
+
+}
+.desc{
+    font-size: 20px;
+}
+
+.likes-container{
+    flex: .25;
+    width: 100%;
+    max-height: 25%;
+    justify-content: space-evenly;
+}
+
+.likes-container > button {
+    max-height: 25px;
+}

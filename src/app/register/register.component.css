@@ -1,0 +1,45 @@
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue ;
+    height: calc(100vh - 120px);
+}
+
+.formbody{
+    padding: 20px;
+    background-color: burlywood;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.username-container, .password-container, .role-container{
+    padding: 10px;
+}
+
+.username-container > label, .password-container >label, .role-container > label{
+    padding-right: 10px;
+}
+
+.role-container{
+    display: flex;
+    justify-content: center;
+}
+
+.registerBtn{
+    text-align: center;
+    padding:10px;
+}
+
+.goToLogin{
+    padding: 0 20px;
+    margin: 25px 0;
+    width: 170px;
+    height: 30px;
+}

@@ -1,0 +1,12 @@
+<div class="background">
+    <div class="add-post-container">
+        <form #newPost="ngForm" (ngSubmit)="addPost(newPost.value)">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title" ngModel>
+            <br/>
+            <label>Description</label>
+            <input type="text" name="desc" placeholder="Description" ngModel>
+            <button>Add Post</button>
+        </form>
+    </div>
+</div>

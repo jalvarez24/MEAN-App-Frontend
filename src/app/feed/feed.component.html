@@ -1,0 +1,15 @@
+<div class="background">
+    <div class="feed-container">
+        <h3 class="feed-title">feed</h3>
+        <div class="posts-container">
+            <app-post *ngFor="let post of posts | async"
+            [title]="post.title"
+            [desc]="post.desc"
+            [username]="post.username"
+            [likes]="post.likes"
+            [id]="post._id"
+            ></app-post>
+        </div>
+    </div>
+</div>
+

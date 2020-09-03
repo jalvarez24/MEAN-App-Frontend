@@ -1,0 +1,14 @@
+<div class="post">
+    <div class="title-container">
+        <span class="title"><b>Title: </b>{{title}}</span>
+    </div>
+    <div class="desc-container">
+        <span class="desc"><b>Content: </b>{{desc}}</span>
+    </div>
+    <div class="likes-container">
+        <span><b>Likes:</b> {{likes}}</span>
+        <button>Like Post</button>
+        <p><b>By:</b> {{username}}</p>
+    </div>
+    <span *ngIf="username===retrievedUsername || role ==='admin'" class="closer" (click)="deletePost()">ⓧ</span>
+</div>

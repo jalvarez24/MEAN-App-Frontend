@@ -1,0 +1,38 @@
+<div class="formcontainer">
+    <div class="formbody">
+        <form style="width:100%;" [formGroup]="myForm">
+            <div class="header">Register</div>
+            <div class="username-container">
+                <label>Username</label>
+                <input type="text" formControlName="username" placeholder="Username" id="user">
+                <!-- <span *ngIf="isValid('username')">Username is required</span> -->
+            </div>
+            <div class="password-container">
+                <label>Password</label>
+                <input type="password" formControlName="password" placeholder="Password" id="pass">
+                <!-- <span *ngIf="isValid('password')">Password is a mandatory field</span> -->
+            </div>
+            <div class="role-container">
+                <label>Role</label>
+                <select formControlName="role"  id="role" ngModel="basic">
+                    <option value='basic' selected>
+                        basic
+                    </option>
+                    <option value='admin'>
+                        admin
+                    </option>
+                </select>
+            </div>
+            <div class="registerBtn">
+                <button (click)="register()">Register</button>
+            </div>
+            <div style="text-align: center;">                
+                {{successMessage}}
+            </div>
+        </form>
+    </div>
+
+    <button class="goToLogin" (click)="moveToLogin()">Login</button>
+
+
+</div>

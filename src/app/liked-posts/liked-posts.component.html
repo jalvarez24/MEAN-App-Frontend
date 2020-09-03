@@ -1,0 +1,15 @@
+<div class="background">
+    <div class="feed-container">
+        <h3 class="feed-title">my posts</h3>
+        <b>Note: Only you have access to this page and delete options.</b>
+        <div class="posts-container">
+            <app-post *ngFor="let post of posts | async"
+            [title]="post.title"
+            [desc]="post.desc"
+            [username]="post.username"
+            [likes]="post.likes"
+            ></app-post>
+        </div>
+    </div>
+</div>
+
